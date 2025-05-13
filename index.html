@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Lee | UI/UX Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Sara Lee</a>
+                <div class="nav-links">
+                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <img src="images/avt.png" alt="Alex Chen" class="hero-avatar">
+            <h1>Hi, I'm Sara Lee</h1>
+            <p class="slogan">I craft intuitive digital experiences</p>
+            <p class="intro">Product designer specializing in healthcare and edtech, with a focus on data-driven UX solutions. Former psychologist turned UX researcher.</p>
+            <div class="hero-actions">
+                <a href="assets/alex-chen-resume.pdf" class="btn btn-primary">Download Resume</a>
+                <a href="#projects" class="btn btn-secondary">View Work</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <p>Selected work demonstrating my end-to-end design process</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="images/logo_medibook.png" alt="MedBook Healthcare App" class="project-img">
+                    <div class="project-info">
+                        <h3>MedBook Healthcare</h3>
+                        <p>Reduced appointment booking drop-off by 65% through UX optimization</p>
+                        <div class="project-tags">
+                            <span class="project-tag">UX Research</span>
+                            <span class="project-tag">Service Design</span>
+                        </div>
+                        <a href="case-study-healthcare.html" class="btn btn-primary">View Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="images/logo_learning.png" alt="LinguaAI App" class="project-img">
+                    <div class="project-info">
+                        <h3>LinguaAI</h3>
+                        <p>AI-powered language learning platform with 40% engagement increase</p>
+                        <div class="project-tags">
+                            <span class="project-tag">AI Integration</span>
+                            <span class="project-tag">EdTech</span>
+                        </div>
+                        <a href="case-study-language-ai.html" class="btn btn-primary">View Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="images/logo_shoporia.png" alt="ShopEasy App" class="project-img">
+                    <div class="project-info">
+                        <h3>ShopEasy</h3>
+                        <p>E-commerce checkout redesign boosting conversions by 25%</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Conversion Rate</span>
+                            <span class="project-tag">Mobile UX</span>
+                        </div>
+                        <a href="case-study-ecommerce.html" class="btn btn-primary">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <img src="images/avt.png" alt="About Alex Chen" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>With 5+ years in product design, I bridge the gap between user needs and business goals. My psychology background informs my research-heavy approach.</p>
+                    <p>Currently leading design at HealthTech startup. Previously at Google's AI education team.</p>
+                    
+                    <div class="skills">
+                        <h3>Core Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-user-tie skill-icon"></i>
+                                <span>UX Strategy</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-line skill-icon"></i>
+                                <span>Data Analysis</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-figma skill-icon"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-users skill-icon"></i>
+                                <span>User Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>Open for freelance projects and full-time opportunities</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span>libra06051992@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin-in contact-icon"></i>
+                    <span>linkedin.com/in/sara-lee-97248a289</span>
+                </div>
+            </div>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
