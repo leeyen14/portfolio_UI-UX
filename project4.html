@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>AI SaaS Landing Page - Case Study</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#00C896",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200"
+  >
+    <div
+      class="relative flex w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <!-- Header Back Button -->
+        <header class="flex items-center gap-3 px-4 py-3">
+            <button
+                onclick="window.history.back();"
+                class="flex items-center text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
+            >
+                <span class="material-symbols-outlined text-2xl">arrow_back</span>
+                <span class="ml-1 text-base font-medium">Back</span>
+            </button>
+        </header>
+
+        <main class="flex flex-1 justify-center py-5">
+          <div
+            class="layout-content-container flex flex-col max-w-5xl flex-1 px-4 sm:px-6 lg:px-8"
+          >
+            <!-- HeroSection -->
+            <div class="@container py-10">
+              <div class="flex flex-col gap-6 @[480px]:gap-8 @[864px]:flex-row">
+                <div
+                  class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center"
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-gray-900 dark:text-white text-4xl font-bold leading-tight tracking-tight @[480px]:text-5xl"
+                    >
+                      AI SaaS Landing Page
+                    </h1>
+                    <h2
+                      class="text-gray-600 dark:text-gray-400 text-lg font-normal leading-normal @[480px]:text-xl"
+                    >
+                      Modern, conversion-focused UI
+                    </h2>
+                  </div>
+                  <div class="flex-wrap gap-3 flex">
+                    <button
+                      onclick="window.open('https://www.figma.com/design/SqPjpDjXhHnRDSbhE8kJsN/Landing-Page-SaaS-AI?m=auto&t=WPXfH8hr7iBqxCQZ-6', '_blank')"
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-wide transition-colors hover:bg-primary/90"
+                    >
+                      <span class="truncate">See Case Study</span>
+                    </button>
+                    <!-- <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white text-base font-bold leading-normal tracking-wide transition-colors hover:bg-gray-300 dark:hover:bg-gray-700"
+                    >
+                      <span class="truncate">See Case Study</span>
+                    </button> -->
+                  </div>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full"
+                  data-alt="A mockup of the Kangaroo Smart Home App displayed on a smartphone and a tablet."
+                  style="
+                    background-image: url('images/logo_project_4.png');
+                    background-size: contain; /* ✅ fit ảnh vào khung */
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-color: #f8fafc;
+                  "
+                ></div>
+              </div>
+            </div>
+            <!-- Project Overview -->
+            <h2
+              class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight px-4 pb-3 pt-16"
+            >
+              Project Overview
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-4">
+              <div class="p-0">
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 border-t border-gray-200 dark:border-gray-700"
+                >
+                  <div
+                    class="flex flex-col gap-1 py-4 pr-2 border-b sm:border-b-0 border-gray-200 dark:border-gray-700"
+                  >
+                    <p
+                      class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal"
+                    >
+                      Purpose
+                    </p>
+                    <p
+                      class="text-gray-800 dark:text-gray-200 text-base font-normal leading-normal"
+                    >
+                      Introduce SaaS AI platform to help businesses easily explore and subscribe.
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-1 py-4 sm:pl-2">
+                    <p
+                      class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal"
+                    >
+                      My Role
+                    </p>
+                    <p
+                      class="text-gray-800 dark:text-gray-200 text-base font-normal leading-normal"
+                    >
+                      UI/UX Designer (Research, Wireframe, UI Design, Prototyping)
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 border-t border-gray-200 dark:border-gray-700"
+                >
+                  <div
+                    class="flex flex-col gap-1 py-4 pr-2 border-b sm:border-b-0 border-gray-200 dark:border-gray-700"
+                  >
+                    <p
+                      class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal"
+                    >
+                      Duration
+                    </p>
+                    <p
+                      class="text-gray-800 dark:text-gray-200 text-base font-normal leading-normal"
+                    >
+                      3 months
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-1 py-4 sm:pl-2">
+                    <p
+                      class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal"
+                    >
+                      Tools
+                    </p>
+                    <p
+                      class="text-gray-800 dark:text-gray-200 text-base font-normal leading-normal"
+                    >
+                      Figma, FigJam, Illustrator
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-full bg-center bg-no-repeat bg-cover aspect-[4/3] rounded-xl"
+                data-alt="A diagram showing user personas and initial app flow sketches"
+                style="
+                  background-image: url('images/project4_overview.png');
+                "
+              ></div>
+            </div>
+            <!-- Key Features -->
+            <h2
+              class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight px-4 pb-3 pt-16"
+            >
+              Key Features
+            </h2>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4"
+            >
+              <div
+                class="bg-white dark:bg-gray-800/50 rounded-xl p-6 flex flex-col gap-4"
+              >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                  >face_2</span
+                >
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white">
+                  ️Smart AI Highlights
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Showcase main AI features with icons
+                </p>
+              </div>
+              <div
+                class="bg-white dark:bg-gray-800/50 rounded-xl p-6 flex flex-col gap-4"
+              >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                  >responsive_layout</span
+                >
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white">
+                  Responsive Design
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Fully optimized for mobile & desktop
+                </p>
+              </div>
+              <div
+                class="bg-white dark:bg-gray-800/50 rounded-xl p-6 flex flex-col gap-4"
+              >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                  >request_quote</span
+                >
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white">
+                  Pricing Section
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Clear tier comparison + CTA
+                </p>
+              </div>
+              <div
+                class="bg-white dark:bg-gray-800/50 rounded-xl p-6 flex flex-col gap-4"
+              >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                  >dashboard</span
+                >
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white">
+                   Dashboard Preview
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Visual data after sign-up
+                </p>
+              </div>
+            </div>
+            <!-- UX Process -->
+            <h2
+              class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight px-4 pb-3 pt-16"
+            >
+              UX Process
+            </h2>
+            <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div class="flex flex-col gap-6">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg"
+                  >
+                    1
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">
+                      User Research
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                      Study SaaS landing examples
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg"
+                  >
+                    2
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">
+                      User Flow &amp; Wireframe
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                      Define page hierarchy
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg"
+                  >
+                    3
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">
+                      Visual Design
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                      Apply clean modern style
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="flex-shrink-0 bg-primary/20 text-primary w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg"
+                  >
+                    4
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">
+                      Prototype &amp; Testing
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                      Collect feedback
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-full bg-center bg-no-repeat bg-cover aspect-[4/3] rounded-xl"
+                data-alt="A flowchart diagram illustrating the four steps of the UX design process."
+                style="
+                  background-image: url('images/project4_uxflow.png');
+                  background-size: contain;
+                "
+              ></div>
+            </div>
+            <!-- Final UI Design -->
+            <h2
+              class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight px-4 pb-3 pt-16 text-center"
+            >
+              Final UI Design
+            </h2>
+            <div class="p-4 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="flex flex-col gap-3">
+                <div
+                class="w-full bg-center bg-no-repeat bg-cover aspect-video rounded-xl"
+                data-alt="Screenshot of the app's main dashboard."
+                style="
+                    background-image: url('images/project4_dashboard.png');
+                    background-size: contain;
+                    background-color: #f8fafc;
+                "
+                ></div>
+                <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+                Dashboard Overview
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <div
+                class="w-full bg-center bg-no-repeat bg-cover aspect-video rounded-xl"
+                data-alt="Screenshot of the device control screen for an air purifier."
+                style="
+                    background-image: url('images/project4_home.png');
+                    background-size: contain;
+                    background-color: #f8fafc;
+                "
+                ></div>
+                <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+                Home
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <div
+                class="w-full bg-center bg-no-repeat bg-cover aspect-video rounded-xl"
+                data-alt="Screenshot of the notifications and settings screen."
+                style="
+                    background-image: url('images/project4_product.png');
+                    background-size: contain;
+                    background-color: #f8fafc;
+                "
+                ></div>
+                <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+                Product
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <div
+                class="w-full bg-center bg-no-repeat bg-cover aspect-video rounded-xl"
+                data-alt="Screenshot of another feature screen."
+                style="
+                    background-image: url('images/project4_pricing.png');
+                    background-size: contain;
+                    background-color: #f8fafc;
+                "
+                ></div>
+                <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+                Pricing
+                </p>
+            </div>
+            </div>
+
+            <!-- Design System -->
+            <h2
+              class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight px-4 pb-3 pt-16"
+            >
+              Design System
+            </h2>
+            <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="flex flex-col gap-6">
+                <div>
+                  <h3
+                    class="font-bold text-lg text-gray-900 dark:text-white mb-3"
+                  >
+                    Color Palette
+                  </h3>
+                  <div class="flex gap-4 flex-wrap">
+                    <div class="flex flex-col items-center gap-1">
+                      <div class="w-20 h-20 rounded-lg bg-primary"></div>
+                      <p class="text-sm">#00C896</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <div
+                            class="w-20 h-20 rounded-lg"
+                            style="background-color: #101922;"
+                        ></div>
+                        <p class="text-sm">#101922</p>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-1">
+                        <div
+                            class="w-20 h-20 rounded-lg border border-gray-300"
+                            style="background-color: #f6f7f8;"
+                        ></div>
+                        <p class="text-sm">#f6f7f8</p>
+                        </div>
+
+                    
+                  </div>
+                </div>
+                <div>
+                  <h3
+                    class="font-bold text-lg text-gray-900 dark:text-white mb-3"
+                  >
+                    Key Components
+                  </h3>
+                  <div class="flex items-center gap-4 flex-wrap">
+                    <button
+                      class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold"
+                    >
+                      Button
+                    </button>
+                    
+                    <span
+                      class="material-symbols-outlined text-primary text-3xl"
+                      >home</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-6">
+                <h3 class="font-bold text-lg text-gray-900 dark:text-white">
+                  Typography
+                </h3>
+                <div class="flex flex-col gap-4">
+                  <p class="text-4xl font-bold">Aa - Heading 1</p>
+                  <p class="text-3xl font-bold">Aa - Heading 2</p>
+                  <p class="text-xl font-bold">Aa - Heading 3</p>
+                  <p class="text-base">
+                    Aa - Body Text: Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                  </p>
+                  <p class="text-sm font-bold uppercase tracking-wider">
+                    Aa - Button Text
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Results -->
+            <h2
+              class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight px-4 pb-3 pt-16"
+            >
+              Results
+            </h2>
+            <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="material-symbols-outlined text-green-500 text-3xl"
+                    >check_circle</span
+                  >
+                  <p>
+                    Improved clarity of CTA flow (+35%)
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="material-symbols-outlined text-green-500 text-3xl"
+                    >check_circle</span
+                  >
+                  <p>Increased form submission rate (+25%)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="material-symbols-outlined text-green-500 text-3xl"
+                    >check_circle</span
+                  >
+                  <p>
+                    Positive tester feedback
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-primary/10 dark:bg-primary/20 p-8 rounded-xl border-l-4 border-primary"
+              >
+                <blockquote
+                  class="text-lg italic text-gray-800 dark:text-gray-200"
+                >
+                  "The interface feels lighter and more professional."
+                </blockquote>
+                <p class="text-right mt-4 font-bold text-primary">
+                  - Beta Tester
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- Footer -->
+        <footer class="w-full border-t border-gray-200 dark:border-gray-800">
+          <div class="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <div
+              class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 text-sm text-gray-500 dark:text-gray-400"
+            >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Back to Projects</a
+              >
+              <!-- <a class="hover:text-primary transition-colors" href="#"
+                >LinkedIn</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Behance</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Email Me</a -->
+              >
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <style>
+      .toggle-checkbox:checked {
+        right: 0;
+        border-color: #2b8cee;
+      }
+      .toggle-checkbox:checked + .toggle-label {
+        background-color: #2b8cee;
+      }
+    </style>
+  </body>
+</html>

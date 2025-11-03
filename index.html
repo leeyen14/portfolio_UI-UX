@@ -33,15 +33,15 @@
             <h1>Hi, I'm Sara Lee</h1>
             <p class="slogan">I craft intuitive digital experiences</p>
             <p class="intro">Product designer specializing in healthcare and edtech, with a focus on data-driven UX solutions. Former psychologist turned UX researcher.</p>
-            <div class="hero-actions">
-                <a href="assets/alex-chen-resume.pdf" class="btn btn-primary">Download Resume</a>
+            <!-- <div class="hero-actions">
+                <a href="assets/-resume.pdf" class="btn btn-primary">Download Resume</a>
                 <a href="#projects" class="btn btn-secondary">View Work</a>
-            </div>
-            <div class="social-links">
+            </div> -->
+            <!-- <div class="social-links">
                 <a href="#"><i class="fab fa-behance"></i></a>
                 <a href="#"><i class="fab fa-dribbble"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -55,43 +55,57 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="images/logo_medibook.png" alt="MedBook Healthcare App" class="project-img">
+                    <img src="images/logo_project_1.png" alt="Kangaroo Smart Home App" class="project-img">
                     <div class="project-info">
-                        <h3>MedBook Healthcare</h3>
-                        <p>Reduced appointment booking drop-off by 65% through UX optimization</p>
+                        <h3>Kangaroo Smart Home App</h3>
+                        <p>Enable users to easily set up and manage devices via mobile</p>
                         <div class="project-tags">
-                            <span class="project-tag">UX Research</span>
-                            <span class="project-tag">Service Design</span>
+                            <span class="project-tag">UX/UI Design</span>
+                            <span class="project-tag">Smart Home App</span>
                         </div>
-                        <a href="case-study-healthcare.html" class="btn btn-primary">View Case Study</a>
+                        <a href="project1.html" class="btn btn-primary">View Case Study</a>
                     </div>
                 </div>
                 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="images/logo_learning.png" alt="LinguaAI App" class="project-img">
+                    <img src="images/logo_project_2.png" alt="Pocket Solution Dashboard" class="project-img">
                     <div class="project-info">
-                        <h3>LinguaAI</h3>
-                        <p>AI-powered language learning platform with 40% engagement increase</p>
+                        <h3>Pocket Solution Dashboard</h3>
+                        <p>Monitor key performance metrics, manage operations, and visualize data in real time</p>
                         <div class="project-tags">
-                            <span class="project-tag">AI Integration</span>
-                            <span class="project-tag">EdTech</span>
+                            <span class="project-tag">Dashboard Design</span>
+                            <span class="project-tag">Data Visualization UX/UI</span>
                         </div>
-                        <a href="case-study-language-ai.html" class="btn btn-primary">View Case Study</a>
+                        <a href="project2.html" class="btn btn-primary">View Case Study</a>
                     </div>
                 </div>
                 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <img src="images/logo_shoporia.png" alt="ShopEasy App" class="project-img">
+                    <img src="images/logo_project_3.png" alt="Carbon Website - CMS" class="project-img">
                     <div class="project-info">
-                        <h3>ShopEasy</h3>
-                        <p>E-commerce checkout redesign boosting conversions by 25%</p>
+                        <h3>Carbon Solution Website</h3>
+                        <p>Provide consulting services, resources, and updates related to carbon reduction and environmental impact</p>
                         <div class="project-tags">
-                            <span class="project-tag">Conversion Rate</span>
-                            <span class="project-tag">Mobile UX</span>
+                            <span class="project-tag">UI/UX Design</span>
+                            <span class="project-tag">Sustainability Platform</span>
                         </div>
-                        <a href="case-study-ecommerce.html" class="btn btn-primary">View Case Study</a>
+                        <a href="project3.html" class="btn btn-primary">View Case Study</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="images/logo_project_4.png" alt="Landing Page SaaS AI" class="project-img">
+                    <div class="project-info">
+                        <h3>Landing Page SaaS AI</h3>
+                        <p>A modern and responsive SaaS landing page designed for an AI-based business solution platform</p>
+                        <div class="project-tags">
+                            <span class="project-tag">UI/UX Design</span>
+                            <span class="project-tag">Landing Page</span>
+                        </div>
+                        <a href="project4.html" class="btn btn-primary">View Case Study</a>
                     </div>
                 </div>
             </div>
@@ -107,7 +121,7 @@
                 </div>
                 <div class="about-text">
                     <h2>About Me</h2>
-                    <p>With 5+ years in product design, I bridge the gap between user needs and business goals. My psychology background informs my research-heavy approach.</p>
+                    <p>With 4+ years in product design, I bridge the gap between user needs and business goals. My psychology background informs my research-heavy approach.</p>
                     <p>Currently leading design at HealthTech startup. Previously at Google's AI education team.</p>
                     
                     <div class="skills">
@@ -153,7 +167,7 @@
                 </div>
             </div>
             
-            <form id="contact-form" class="contact-form">
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/meopvwnn" method="post">
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
@@ -169,5 +183,29 @@
     </section>
 
     <script src="js/main.js"></script>
+    <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const form = e.target;
+
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+    })
+    .then(response => {
+        if (response.ok) {
+        alert("✅ Thank you! Your message has been sent successfully.");
+        form.reset();
+        } else {
+        alert("❌ Oops! Something went wrong, please try again later.");
+        }
+    })
+    .catch(() => {
+        alert("⚠️ Network error. Please try again.");
+    });
+    });
+    </script>
+
 </body>
 </html>

@@ -42,6 +42,26 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.case-study-img.framed {
+  width: 70%;
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-study-img.framed img {
+  width: 70%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
 /* Case Study Content */
 .case-study-content {
     max-width: 800px;
